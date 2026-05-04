@@ -1,0 +1,62 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# =========================
+# BACK-END (PYTHON)
+# =========================
+
+# Ambientes Virtuais (NUNCA suba isso, é muito pesado)
+venv/
+.venv/
+env/
+ENV/
+
+# Arquivos compilados do Python e Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# =========================
+# SEGURANÇA E VARIÁVEIS 
+# =========================
+# Ignora suas chaves de API e configurações locais
+.env
+.env.*
+!.env.example # Permite subir um arquivo de exemplo vazio para quem clonar o repo
+
+# =========================
+# DADOS E RAG 
+# =========================
+# Ignora o banco de dados vetorial local 
+.chroma/
+vector_store/
+
+# ignorar documentos
+data/
+uploads/
+*.pdf
+
+#
+*.sqlite3
